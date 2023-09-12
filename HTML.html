@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Web Design Example</title>
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .box {
+      width: 100%;
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      header {
+        font-size: 24px;
+      }
+      .box {
+        background-color: #ccc;
+      }
+    }
+    @media only screen and (max-width: 480px) {
+      header {
+        font-size: 18px;
+      }
+      .box {
+        background-color: #aaa;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Responsive Website</h1>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <p>This is a box.</p>
+    </div>
+    <div class="box">
+      <p>This is another box.</p>
+    </div>
+  </div>
+
+</body>
+</html>
